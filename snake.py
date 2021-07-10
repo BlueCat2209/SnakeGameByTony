@@ -134,7 +134,7 @@ while True:
         game_over()
     if snakePos[1] > 450 or snakePos[1] < 10:
         game_over()
-        #Đụng chính snake (gặp bug: rắn sau loop đầu không tự dài ra mà lại ngắn đi)
+        #Đụng chính snake
     for body in snakeBody[2:]:
         if snakePos[0] == body[0] and snakePos[1] == body[1]:
             game_over()
